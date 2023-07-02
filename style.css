@@ -97,7 +97,7 @@ a.Cancel1:hover {
 }
 @media only screen and (max-width: 425px) {
   body {
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(./images/pattern-background-mobile.svg);
     font-size: 14px;
   }
   .container {
