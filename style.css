@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,500;1,700&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text-container {
+  padding: 7%;
+  text-align: center;
+}
+.tittle {
+  color: hsl(223, 47%, 23%);
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.text-containerp.subtittle {
+  color: black;
+  margin-bottom: 25px;
+}
+.box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.box1 {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.box1 div {
+  margin-left: 20px;
+}
+.box1 div h5 {
+  font-weight: 900;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+}
+.box div p {
+  font: size 14px;
+  color: #8a8a8a;
+}
+.box a {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  transition: color.3s ease;
+}
+
+.box a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+a.proced-btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+a.proced-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+a.Cancel1 {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+a.Cancel1:hover {
+  color: hsl(223, 47%, 23%);
+}
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .tittle {
+    font-size: 23px;
+  }
+  div.box {
+    padding: 12px;
+  }
+  .box2 div {
+    margin-left: 10px;
+  }
+  a.proced-btn,
+  a.cancel1,
+  .box a {
+    font-size: 13px;
+  }
+  .text-container {
+    padding: 9%, 7%;
+  }
+}
